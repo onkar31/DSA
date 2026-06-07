@@ -15,6 +15,7 @@ public class Palindrome {
         return new StringBuffer(str).reverse().toString().equals(str);
     }
 
+    //Optimal way
     public static boolean isPalindrome(String str) {
         int left = 0;
         int right = str.length() - 1;
