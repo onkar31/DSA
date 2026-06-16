@@ -31,14 +31,14 @@ public class Reduce {
         System.out.println("Max number from array: "+max);
     }
 
-//    Find longest string
+//    Concatenate String
     public static void concatStrings(List<String> word){
         String conc = word.stream()
                 .reduce("", (a, b) -> a+ " "+ b).trim();
         System.out.println("Concated words are: "+ conc);
     }
 
-//    Concatenate String
+//    Find longest string
     public static void findLongestString(List<String> word){
         String longestStr = word.stream()
                 .reduce("", (a, b) -> a.length() > b.length() ? a : b) ;
