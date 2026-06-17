@@ -24,6 +24,7 @@ public class Question20 {
         groupByNameLength(employees);
     }
 
+    //Group by first character
     public static void groupByFirstLetter(List<String> words) {
         Map<Character, List<String>> result = words.stream()
                 .collect(
@@ -41,7 +42,7 @@ public class Question20 {
         System.out.println(result);
     }
 
-    //Group Employeed by Department
+    //Group Employee by Department
     public static void groupByDepartment(List<Employee> employees) {
         Map<String, List<Employee>> result = employees.stream()
                 .collect(
