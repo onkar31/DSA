@@ -60,15 +60,15 @@ public class CountElementStartingWithLetter {
     // allMatch
     public static void allMatch(List<String> names) {
         boolean checkLength = names.stream()
-                .anyMatch(name -> name.length() > 2);
+                .allMatch(name -> name.length() > 2);
         System.out.println("All names length are greater than 2: "+checkLength);
     }
 
     // noneMatch
     public static void noneMatch(List<String> names) {
         boolean checkListIsNotEmpty = names.stream()
-                .anyMatch(name -> !name.isBlank());
-        System.out.println("list is not blank: "+checkListIsNotEmpty);
+                .noneMatch(name -> !name.isBlank());
+        System.out.println("list is blank: "+checkListIsNotEmpty);
     }
 
 }

@@ -59,7 +59,7 @@ public class Reduce {
 //        int sum = list.stream()
 //                .reduce(0, (a,b) -> a+b);
 
-    // Note: For integer sums prefer mapToInt().sum() instead od reduce
+    // Note: For integer sums prefer mapToInt().sum() instead of reduce
         int sum = list.stream()
                         .mapToInt(Integer::intValue).sum();
         System.out.println("Sum of Array: "+sum);
