@@ -51,7 +51,7 @@ public class Question20 {
         System.out.println(result);
     }
 
-    //Group Employeed by name length
+    //Group Employee by name length
     public static void groupByNameLength(List<Employee> employees) {
         Map<Integer, List<Employee>> result = employees.stream()
                 .collect(

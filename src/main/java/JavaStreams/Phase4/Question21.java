@@ -20,7 +20,7 @@ public class Question21 {
         getAverageSalaryByDepartment(employees);
     }
 
-    // Group Employeed by Department and return String (not Object).
+    // Group Employees by Department and return String (not Object).
     public static void getGroupByDepartment(List<Employee> employees) {
         Map<String, List<String>> result = employees.stream()
                 .collect(Collectors.groupingBy(
