@@ -8,7 +8,8 @@ public class SortedRotatedArray {
         int[] nums1 = {3,4,5,1,2};      //true
         int[] nums2 = {2,1,3,4};        //false
         int[] nums3 = {1, 2, 3};        //true
-        System.out.println(check(nums1));
+//        System.out.println(check(nums1));
+        System.out.println(checkOptimised(nums1));
     }
     public static boolean check(int[] nums) {
         int count = 0;
@@ -25,7 +26,7 @@ public class SortedRotatedArray {
     }
 
     //Optimised
-    public boolean checkOptimised(int[] nums) {
+    public static boolean checkOptimised(int[] nums) {
         int count = 0;
         int n = nums.length;
 
